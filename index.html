@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Generator</title>
+
+    <style>
+        
+       .container{
+        
+        margin: 0 auto;
+        width: 400px;
+        padding: 20px;
+        background-color: rgb(237, 173, 173);
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        }
+        form{
+           
+            display: flex;
+            flex-direction: column;
+        }
+        form label, form input{
+            margin-bottom: 10px;
+        }
+        button{
+            
+            margin: 20px 100px ;
+            margin-bottom: -10px;
+            padding: 10px 20px;
+            width: 150px;
+            background-color: rgb(169, 65, 119);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #results{
+            text-align: center;
+            margin-top: 50px;
+        }
+        #weight-guide{
+           
+            margin-top: 20px;
+        }
+        #weight-guide ul{
+            list-style-type: square;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Generator</h1>
+        <form>
+            <p><label>Height in CM: </label><input type="text" id="height"></p>
+            <p><label>Weight in KG: </label><input type="text" id="weight"></p>
+            <button>Calculate</button>
+            <div id="results"></div>
+            <div id="weight-guide">
+                <h3>Weight Status Guide:</h3>
+                <ul>
+                    <li>Underweight: less than 18.5 kg</li>
+                    <li>Normal: 18.5 kg - 24.9 kg</li>
+                    <li>Overweight: 25 kg - 29.9 kg</li>
+                   
+                </ul>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+<script src="Pro-2.js"></script>
+</html>
